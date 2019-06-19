@@ -220,8 +220,9 @@ body{
     width:250px;
   }
   
-  /* Cajas */
-  #cajas{
+  
+/* Cajas */
+#cajas{
     margin-top:20px;
   }
   
@@ -235,7 +236,28 @@ body{
   #cajas .caja img{
     width:90px;
   }
-
+  
+  /* Lateral */
+  aside#lateral{
+    float:right;
+    width:30%;
+    margin-top:10px;
+  }
+  
+  /* Main-col */
+  article#main-col{
+    float:left;
+    width:65%;
+  }
+  
+  /* Servicios */
+  ul#servicios li{
+    list-style: none;
+    padding:20px;
+    border: #cccccc solid 1px;
+    margin-bottom:5px;
+    background:#e6e6e6;
+  }
   
   /* footer*/
 
@@ -247,3 +269,60 @@ footer{
     background-color:#AC493C;
     text-align: center;
   }
+
+
+
+  input, textarea{
+    width: 100%;
+    height: 35px;
+    border: 1px solid gray; 
+    margin-bottom: 5px;
+  }
+  
+  textarea{
+    height: 120px;
+  }
+  
+  input[type='submit']{
+    background-color: #e8491d;
+    color: #fff;  
+  }
+  
+  /* Media Queries */
+  @media(max-width: 768px){
+    header #marca,
+    header nav,
+    header nav li,
+    #boletin h1,
+    #boletin form,
+    #cajas .caja,
+    article#main-col,
+    aside#lateral{
+      float:none;
+      text-align:center;
+      width:100%;
+    }
+  
+    header{
+      padding-bottom:20px;
+    }
+  
+    #boletin h1{
+      margin-top:40px;
+    }
+  
+    #boletin button{
+      display:block;
+      width:100%;
+    }
+  
+    #boletin form input[type="email"]{
+      width:100%;
+      margin-bottom:5px;
+    }
+  
+    input, textarea{
+      width: 98%; 
+    }
+  }
+  
